@@ -6,13 +6,13 @@ public class LojinhaApp {
     public static void main(String[] args) {
         Produto novoProduto = new Produto();
 
-        novoProduto.nome = "Playstation 5";
-        novoProduto.valor = 3499.99;
-        novoProduto.tamanho = "Médio";
-        novoProduto.marca = "Sony";
-        novoProduto.itensInclusos = "2 controles e 3 jogos";
+        novoProduto.setNome("Playstation 5");
+        novoProduto.setValor(3499.99);
+        novoProduto.setTamanho("Médio");
+        novoProduto.setMarca("Sony");
+        novoProduto.setItensInclusos("2 controles e 3 jogos");
 
-        System.out.println(novoProduto.nome);
+        System.out.println(novoProduto.getNome());
 
 
 //        System.out.println("Lojinha App!!!");
