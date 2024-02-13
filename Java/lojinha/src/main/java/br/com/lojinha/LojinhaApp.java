@@ -2,6 +2,9 @@ package br.com.lojinha;
 
 import br.com.lojinha.pojo.Produto;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LojinhaApp {
     public static void main(String[] args) {
         Produto novoProduto = new Produto();
@@ -10,11 +13,15 @@ public class LojinhaApp {
         novoProduto.setValor(3499.99);
         novoProduto.setTamanho("Médio");
         novoProduto.setMarca("Sony");
-        novoProduto.setItensInclusos("2 controles e 3 jogos");
+        List<String> itensInclusos = new ArrayList<>();
+        itensInclusos.add("2 controles");
+        itensInclusos.add("3 jogos");
+        itensInclusos.add("1 fonte de energia");
+        novoProduto.setItensInclusos(itensInclusos);
 
         novoProduto.setValor(5000.0);
 
-        System.out.println(novoProduto.getValor());
+        System.out.println(novoProduto.getItensInclusos().get(0));
 
 //        System.out.println(novoProduto.getNome());
 
