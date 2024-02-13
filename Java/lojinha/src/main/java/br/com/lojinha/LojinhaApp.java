@@ -12,7 +12,11 @@ public class LojinhaApp {
         novoProduto.setMarca("Sony");
         novoProduto.setItensInclusos("2 controles e 3 jogos");
 
-        System.out.println(novoProduto.getNome());
+        novoProduto.setValor(5000.0);
+
+        System.out.println(novoProduto.getValor());
+
+//        System.out.println(novoProduto.getNome());
 
 
 //        System.out.println("Lojinha App!!!");
