@@ -1,5 +1,7 @@
 package br.com.lojinha.pojo;
 
+import br.com.lojinha.enums.Tamanho;
+
 import java.util.List;
 
 public class Produto {
@@ -7,7 +9,7 @@ public class Produto {
     private String marca;
     private Double valor;
     private List<String> itensInclusos;
-    private String tamanho;
+    private Tamanho tamanho;
 
     public String getNome() {
         return this.nome;
@@ -45,11 +47,11 @@ public class Produto {
         this.itensInclusos = novosItensInclusos;
     }
 
-    public String getTamanho() {
+    public Tamanho getTamanho() {
         return this.tamanho;
     }
 
-    public void setTamanho(String novoTamanho) {
+    public void setTamanho(Tamanho novoTamanho) {
         this.tamanho = novoTamanho;
     }
 }
