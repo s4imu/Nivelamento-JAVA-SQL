@@ -8,20 +8,23 @@ import java.util.List;
 
 public class LojinhaApp {
     public static void main(String[] args) {
-        Produto novoProduto = new Produto();
+        Produto novoProduto = new Produto("Sony", Tamanho.MEDIO);
 
         novoProduto.setNome("Playstation 5");
         novoProduto.setValor(3499.99);
-        novoProduto.setTamanho(Tamanho.MEDIO);
-        novoProduto.setMarca("Sony");
         List<String> itensInclusos = new ArrayList<>();
         itensInclusos.add("2 controles");
         itensInclusos.add("3 jogos");
         itensInclusos.add("1 fonte de energia");
         novoProduto.setItensInclusos(itensInclusos);
 
-        novoProduto.setTamanho(Tamanho.GRANDE);
+        System.out.println(novoProduto.getMarca());
         System.out.println(novoProduto.getTamanho());
+
+        novoProduto.setMarca("JBL");
+
+        System.out.println(novoProduto.getMarca());
+
 
 //        System.out.println(novoProduto.getNome());
 
