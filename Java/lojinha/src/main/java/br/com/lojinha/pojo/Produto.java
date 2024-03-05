@@ -7,7 +7,7 @@ import java.util.List;
 public class Produto {
     private String nome;
     private String marca;
-    private Double valor;
+    protected Double valor;
     private List<ItemAdicional> itensInclusos;
     private Tamanho tamanho;
 
