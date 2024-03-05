@@ -8,7 +8,7 @@ public class Produto {
     private String nome;
     private String marca;
     private Double valor;
-    private List<String> itensInclusos;
+    private List<ItemAdicional> itensInclusos;
     private Tamanho tamanho;
 
 public Produto(String marcaInicial, Tamanho tamanhoInicial) {
@@ -44,11 +44,11 @@ public Produto(String marcaInicial, Tamanho tamanhoInicial) {
         }
     }
 
-    public List<String> getItensInclusos() {
+    public List<ItemAdicional> getItensInclusos() {
         return this.itensInclusos;
     }
 
-    public void setItensInclusos(List<String> novosItensInclusos) {
+    public void setItensInclusos(List<ItemAdicional> novosItensInclusos) {
         this.itensInclusos = novosItensInclusos;
     }
 
