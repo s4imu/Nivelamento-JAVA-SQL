@@ -2,7 +2,7 @@ package br.com.lojinha.pojo;
 
 import br.com.lojinha.enums.Tamanho;
 
-public class ProdutoInternacional extends Produto{
+public class ProdutoInternacional extends Produto implements Favorito{
 
     private double taxaImportacao;
     public ProdutoInternacional(String marcaInicial, Tamanho tamanhoInicial) {
@@ -25,4 +25,8 @@ public class ProdutoInternacional extends Produto{
         this.taxaImportacao = novaTaxaImportacao;
     }
 
+    @Override
+    public String getDadosFavoritos() {
+        return this.getNome() + ", " + this.getMarca() + " e " + getValor();
+    }
 }

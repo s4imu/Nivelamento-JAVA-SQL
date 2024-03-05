@@ -44,6 +44,9 @@ public class LojinhaApp {
         meuProdutoInternacional.setTaxaImportacao(0.22);
         System.out.println(meuProdutoInternacional.getTaxaImportacao());
 
+        System.out.println(meuProdutoNacional.getDadosFavoritos());
+        System.out.println(meuProdutoInternacional.getDadosFavoritos());
+
 //        System.out.println(novoProduto.getNome());
 
 
